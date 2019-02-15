@@ -1,0 +1,3 @@
+rootProject.name = 'junction2019'
+
+include ':app'
