@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import { RootStack as roots, StackOptions } from "./src/routes";
+import { RootStack, StackOptions } from "./src/routes";
 
 type Props = {};
 class App extends Component<Props> {
@@ -10,6 +10,6 @@ class App extends Component<Props> {
   }
 }
 
-const AppContainer = createStackNavigator(roots, StackOptions);
+const AppContainer = createStackNavigator(RootStack, StackOptions);
 
 export default createAppContainer(AppContainer);
